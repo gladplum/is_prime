@@ -1,2 +1,2 @@
 # is_prime
-To Exercise my is_prime code
+Return a booelan that shows whether the number inputted is prime number or not
