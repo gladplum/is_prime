@@ -1,0 +1,21 @@
+#Prime Number
+
+def is_prime(number):
+    #Create list of interger lower than that number
+    interger_list = range(2,number)
+
+    #Create a boolean parameter
+    is_prime = True
+    
+    #If 0 or 1 then it is not a prime number
+    if number in [1]:
+        return(False)
+    elif number <= 0:
+        return(print('Invalid, pls insert positive interger'))
+
+    #Check if the interger is divisible by each of that interger list
+    for interger in interger_list:
+        if number%interger == 0:
+            is_prime = False
+            break
+    return(is_prime)
